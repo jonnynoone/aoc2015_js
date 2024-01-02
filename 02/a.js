@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const data = fs.readFileSync('data.txt', 'utf8');
 
-let rows = data.split('\n');
+let rows = data.split('\r\n');
 let total = 0;
 
 for (let i = 0; i < rows.length; i++) {
